@@ -6,11 +6,11 @@ export default function ReposUser({ data, repos, loading }) {
       {data && repos
         ? repos.map((item, index) => {
             return (
-              <div key={index}>
+              <div key={index} data-aos="zoom-in-left" data-aos-duration="1000">
                 <a href={item.html_url}>
                   {" "}
                   {item.language && (
-                    <div className="item-card hvr-grow">
+                    <div className="item-card hvr-grow ">
                       <h3>{item.name}</h3>
                       {item.description && <p>{item.description}</p>}
                       {<p>Language: {item.language}</p>}

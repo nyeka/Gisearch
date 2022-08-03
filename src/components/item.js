@@ -7,13 +7,15 @@ import "./search.css";
 
 export default function Item() {
   const [count, setCount] = useState("");
-  const { data, loading, refet, error, repos, setError } = Testing(count);
+  const { data, loading, refet, error, repos } = Testing(count);
 
   if (error) {
     return (
       <Wrap>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7904723.png&f=1&nofb=1" />
+        <span>Kudaranai Ningen</span>
         <h2>Username Not Found</h2>
-        <a href="/">
+        <a href="https://www.nyomaneka.me/Gisearch">
           <p>Go Back</p>
         </a>
       </Wrap>
@@ -63,6 +65,38 @@ const Wrap = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  img {
+    position: absolute;
+    top: -12px;
+    width: 1900px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  h2 {
+    margin-top: 3em;
+  }
+
+  span {
+    color: wheat;
+    position: absolute;
+    top: 202px;
+    z-index: 2;
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 500px) {
+    img {
+      width: 395px;
+    }
+    span {
+      position: absolute;
+      top: 190px;
+      color: wheat;
+      font-weight: bold;
+    }
+  }
 `;
 
 const Container = styled.div`

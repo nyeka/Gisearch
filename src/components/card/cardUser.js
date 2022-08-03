@@ -29,6 +29,8 @@ const Container = styled.div`
   img {
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid wheat;
   }
 
   .card-content {
@@ -45,6 +47,16 @@ const Container = styled.div`
   @media screen and (max-width: 760px) {
     .card-content {
       flex-direction: column;
+      width: 250px;
+    }
+
+    img {
+      height: 230px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .card-content {
       width: fit-content;
     }
   }

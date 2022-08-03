@@ -35,7 +35,8 @@ const Container = styled.div`
 
   .item-card {
     margin: 20px;
-    width: 300px;
+    width: 350px;
+    height: 240px;
     border-radius: 20px;
     background: wheat;
     box-shadow: 40px 40px 100px #969696, -40px -40px 100px #ffffff;
@@ -43,6 +44,13 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 760px) {
+    .item-card {
+      width: 250px;
+      height: fit-content;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
     .item-card {
       width: fit-content;
     }

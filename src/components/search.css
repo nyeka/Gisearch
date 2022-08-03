@@ -35,6 +35,12 @@
 
 @media screen and (max-width: 768px) {
   .searchBar-wrap {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .searchBar-wrap {
     width: fit-content;
   }
 }

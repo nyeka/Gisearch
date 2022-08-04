@@ -36,9 +36,9 @@ const Container = styled.div`
   .card-content {
     width: 500px;
     padding: 24px;
-    border-radius: 50px;
+    border-radius: 30px;
     background: #e0e0e0;
-    box-shadow: 20px 20px 78px #bebebe, -20px -20px 78px #ffffff;
+    box-shadow: 5px 5px 10px #c3c3c3, -5px -5px 10px #fdfdfd;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

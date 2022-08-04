@@ -39,7 +39,7 @@ const Container = styled.div`
     height: 240px;
     border-radius: 20px;
     background: wheat;
-    box-shadow: 40px 40px 100px #969696, -40px -40px 100px #ffffff;
+    box-shadow: 5px 5px 10px #c3c3c3, -5px -5px 10px #fdfdfd;
     padding: 20px;
   }
 

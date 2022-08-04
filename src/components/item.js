@@ -6,14 +6,11 @@ import ReposUser from "./Repos/ReposUser";
 import "./search.css";
 
 export default function Item() {
-  const [count, setCount] = useState("");
-  const { data, loading, refet, error, repos } = Testing(count);
+  const { data, loading, refet, error, repos, name, setName } = Testing();
 
   if (error) {
     return (
       <Wrap>
-        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7904723.png&f=1&nofb=1" />
-        <span>Kudaranai Ningen</span>
         <h2>Username Not Found</h2>
         <a href="https://www.nyomaneka.me/Gisearch">
           <p>Go Back</p>
@@ -31,14 +28,14 @@ export default function Item() {
       <div className="searchBar-wrap">
         <input
           type="text"
-          value={count}
-          onChange={(e) => setCount(e.target.value)}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           placeholder="input username"
         />
         <button
           onClick={refet}
           style={{ cursor: "pointer" }}
-          disabled={count ? false : true}
+          disabled={name ? false : true}
         >
           Search
         </button>

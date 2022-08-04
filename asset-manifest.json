@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Gisearch/static/css/main.24aebcea.css",
-    "main.js": "/Gisearch/static/js/main.878cc9c6.js",
+    "main.js": "/Gisearch/static/js/main.ab78e127.js",
     "static/js/787.86c5efe5.chunk.js": "/Gisearch/static/js/787.86c5efe5.chunk.js",
     "index.html": "/Gisearch/index.html",
     "main.24aebcea.css.map": "/Gisearch/static/css/main.24aebcea.css.map",
-    "main.878cc9c6.js.map": "/Gisearch/static/js/main.878cc9c6.js.map",
+    "main.ab78e127.js.map": "/Gisearch/static/js/main.ab78e127.js.map",
     "787.86c5efe5.chunk.js.map": "/Gisearch/static/js/787.86c5efe5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24aebcea.css",
-    "static/js/main.878cc9c6.js"
+    "static/js/main.ab78e127.js"
   ]
 }

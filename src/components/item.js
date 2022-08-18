@@ -5,6 +5,7 @@ import CardUser from "./card/cardUser";
 import ReposUser from "./Repos/ReposUser";
 import "./search.css";
 import loadinggif from "./images/Loading.gif";
+import { Link } from "react-router-dom";
 
 export default function Item() {
   const { data, loading, refet, error, repos, name, setName } = Testing();
@@ -19,9 +20,9 @@ export default function Item() {
     return (
       <Wrap>
         <h2>Username Not Found</h2>
-        <a href="https://www.nyomaneka.me/Gisearch">
+        <Link to="/">
           <p>Go Back</p>
-        </a>
+        </Link>
       </Wrap>
     );
   }

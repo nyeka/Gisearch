@@ -4,6 +4,7 @@ import styled from "styled-components";
 import CardUser from "./card/cardUser";
 import ReposUser from "./Repos/ReposUser";
 import "./search.css";
+import loadinggif from "./images/Loading.gif";
 
 export default function Item() {
   const { data, loading, refet, error, repos, name, setName } = Testing();
@@ -53,7 +54,10 @@ export default function Item() {
       )}
 
       {loading ? (
-        <div>Loading...</div>
+        <div className="loading">
+          <img src={loadinggif} alt="loading" />
+          <p>Loading...</p>
+        </div>
       ) : (
         data &&
         repos && <ReposUser repos={repos} data={data} loading={loading} />
@@ -108,6 +112,13 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100vw;
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 
   .header-card {
     display: flex;

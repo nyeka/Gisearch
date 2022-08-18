@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import Testing from "./utils/data";
 import styled from "styled-components";
 import CardUser from "./card/cardUser";
@@ -7,6 +7,12 @@ import "./search.css";
 
 export default function Item() {
   const { data, loading, refet, error, repos, name, setName } = Testing();
+
+  const handlecode = (e) => {
+    if (e.key === "Enter") {
+      refet(name);
+    }
+  };
 
   if (error) {
     return (
@@ -27,6 +33,7 @@ export default function Item() {
       </div>
       <div className="searchBar-wrap">
         <input
+          onKeyDown={handlecode}
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}

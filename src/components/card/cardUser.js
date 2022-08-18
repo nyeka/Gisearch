@@ -7,12 +7,14 @@ export default function CardUser({ data, loading, repos }) {
       <a href={data.html_url}>
         {data.html_url && (
           <div className="card-content hvr-grow">
-            <img src={data.avatar_url} />
+            <img src={data.avatar_url} alt="ini gambar" />
             <div className="card-text">
               <h2>{data.name}</h2>
               {data.company && <h4>{data.company}</h4>}
               {data.location && <p>Location: {data.location}</p>}
-              {data.public_repos && <p>Current Repos: {data.public_repos}</p>}
+              {data.public_repos !== 0 ? (
+                <p>Current Repos: {data.public_repos}</p>
+              ) : null}
             </div>
           </div>
         )}

@@ -118,6 +118,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    img {
+      border-radius: 10px;
+    }
   }
 
   .header-card {
